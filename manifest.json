@@ -1,11 +1,11 @@
 {
-    "id":  "note-schemas",
-    "name":  "Note Schemas",
-    "version":  "0.1.0",
-    "minAppVersion":  "1.5.0",
-    "description":  "Typed schemas for note kinds: frontmatter validation, autocomplete, and autofix.",
-    "author":  "Aguila1989",
-    "isDesktopOnly":  false,
-    "authorUrl":  "https://github.com/Aguila1989",
-    "fundingUrl":  "https://buymeacoffee.com/aguila1989"
+  "id": "note-schemas",
+  "name": "Note Schemas",
+  "version": "0.1.1",
+  "minAppVersion": "1.7.2",
+  "description": "Typed schemas for note kinds: frontmatter validation, autocomplete, and autofix.",
+  "author": "Aguila1989",
+  "isDesktopOnly": false,
+  "authorUrl": "https://github.com/Aguila1989",
+  "fundingUrl": "https://buymeacoffee.com/aguila1989"
 }

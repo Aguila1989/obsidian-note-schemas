@@ -93,7 +93,8 @@ export default class NoteSchemasPlugin extends Plugin {
 			...DEFAULT_SETTINGS,
 			schemaPath: defaultSchemaPath(this.app.vault.configDir),
 		};
-		this.settings = Object.assign({}, defaults, await this.loadData());
+		const data = (await this.loadData()) as Partial<NoteSchemasSettings> | null;
+		this.settings = Object.assign({}, defaults, data);
 		// Guard against an empty stored value; user-set paths are kept as-is.
 		if (!this.settings.schemaPath.trim()) this.settings.schemaPath = defaults.schemaPath;
 	}

@@ -55,7 +55,6 @@ export class SchemaSuggest extends EditorSuggest<SchemaSuggestion> {
 			const fieldName = valueMatch[2];
 			const field = def.fields[fieldName];
 			if (field && field.type === "enum" && field.values && field.values.length > 0) {
-				const valueStart = valueMatch[1].length + valueMatch[2].length + 1; // past "  name:"
 				const query = valueMatch[3];
 				const startCh = cursor.ch - query.length;
 				this.pending = { mode: "value", typeName, fieldName };
