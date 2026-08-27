@@ -115,3 +115,8 @@ This plugin is **not yet in the community store**. To install it manually:
 5. Add matching notes, then run **Validate vault against schemas**. Edit a typed
    note's frontmatter to see autocomplete and the status-bar indicator, and try
    **Fix all safe issues in this note**.
+
+## Support
+
+If this plugin is useful to you, you can support its development at
+[Buy Me a Coffee](https://buymeacoffee.com/aguila1989).
