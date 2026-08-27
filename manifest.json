@@ -1,0 +1,9 @@
+{
+  "id": "note-schemas",
+  "name": "Note Schemas",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Typed schemas for note kinds: frontmatter validation, autocomplete, and autofix.",
+  "author": "Kevin Demeulenaere",
+  "isDesktopOnly": false
+}

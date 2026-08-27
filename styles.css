@@ -1,0 +1,131 @@
+/* Note Schemas — status bar indicator */
+.note-schemas-status {
+	font-variant-numeric: tabular-nums;
+}
+.note-schemas-status.is-valid {
+	color: var(--text-success, var(--color-green));
+}
+.note-schemas-status.is-invalid {
+	color: var(--text-error, var(--color-red));
+}
+.note-schemas-status.is-warn {
+	color: var(--text-warning, var(--color-yellow));
+}
+.note-schemas-status.is-neutral {
+	color: var(--text-muted);
+}
+
+/* Violations side panel */
+.note-schemas-view {
+	padding: 0 var(--size-4-2);
+}
+.note-schemas-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--size-4-2);
+	padding-top: var(--size-4-2);
+}
+.note-schemas-header h4 {
+	margin: 0;
+}
+.note-schemas-rerun {
+	font-size: var(--font-ui-smaller);
+	cursor: pointer;
+}
+.note-schemas-summary {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	margin: var(--size-4-1) 0 var(--size-4-3);
+}
+.note-schemas-count-error {
+	color: var(--text-error, var(--color-red));
+	font-weight: var(--font-semibold);
+}
+.note-schemas-count-warn {
+	color: var(--text-warning, var(--color-yellow));
+	font-weight: var(--font-semibold);
+}
+
+.note-schemas-empty {
+	color: var(--text-muted);
+	padding: var(--size-4-4) 0;
+	text-align: center;
+}
+.note-schemas-empty.is-error {
+	color: var(--text-error, var(--color-red));
+}
+
+.note-schemas-group {
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	margin-bottom: var(--size-4-2);
+	overflow: hidden;
+}
+.note-schemas-note-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--size-4-2);
+	padding: var(--size-4-2) var(--size-4-3);
+	background: var(--background-secondary);
+	cursor: pointer;
+}
+.note-schemas-note-title:hover {
+	background: var(--background-modifier-hover);
+}
+.note-schemas-note-name {
+	font-weight: var(--font-semibold);
+}
+.note-schemas-note-type {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-on-accent);
+	background: var(--interactive-accent);
+	border-radius: var(--radius-s);
+	padding: 0 var(--size-4-2);
+}
+
+.note-schemas-violation {
+	display: flex;
+	align-items: baseline;
+	gap: var(--size-4-2);
+	padding: var(--size-4-1) var(--size-4-3);
+	font-size: var(--font-ui-smaller);
+	cursor: pointer;
+	border-top: 1px solid var(--background-modifier-border);
+}
+.note-schemas-violation:hover {
+	background: var(--background-modifier-hover);
+}
+.note-schemas-violation.is-error .note-schemas-sev {
+	color: var(--text-error, var(--color-red));
+}
+.note-schemas-violation.is-warning .note-schemas-sev {
+	color: var(--text-warning, var(--color-yellow));
+}
+.note-schemas-msg {
+	color: var(--text-normal);
+}
+
+/* Editor suggestions */
+.note-schemas-suggestion {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--size-4-3);
+	width: 100%;
+}
+.note-schemas-suggestion-meta {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+}
+
+/* Settings tab status line */
+.note-schemas-settings-status {
+	margin-top: var(--size-4-4);
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+}
+.note-schemas-settings-status.is-error {
+	color: var(--text-error, var(--color-red));
+}
