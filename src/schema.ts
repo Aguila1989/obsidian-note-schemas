@@ -102,7 +102,9 @@ export class SchemaStore {
 	private parse(raw: string, asJson: boolean): boolean {
 		let parsed: unknown;
 		try {
-			parsed = asJson ? JSON.parse(raw) : parseYaml(raw);
+			// Strip a UTF-8 BOM — Windows editors commonly write one, and JSON.parse rejects it.
+			const text = raw.replace(/^\uFEFF/, "");
+			parsed = asJson ? JSON.parse(text) : parseYaml(text);
 		} catch (e) {
 			this.doc = {};
 			this.loadError = `Schema is not valid ${asJson ? "JSON" : "YAML"}: ${String(e)}`;
